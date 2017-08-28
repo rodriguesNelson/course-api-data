@@ -1,0 +1,199 @@
+{
+	"GetAllTopics": 
+	{
+		"method": "GET",
+		"url": "http://localhost:9000/topics",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"AddTopic": 
+	{
+		"method": "POST",
+		"url": "http://localhost:9000/topics",
+		"body": "{\n\"id\": \"mongodb\",\n\"name\":\t\"Mongo DB\",\n\"description\": \"This is the topic's description for Mongo DB\"\n}",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			[
+				"Content-Type",
+				"application/json"
+			]
+		]
+	},
+
+	"GetTopic": 
+	{
+		"method": "GET",
+		"url": "http://localhost:9000/topics/mongodb",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"UpdateTopic": 
+	{
+		"method": "PUT",
+		"url": "http://localhost:9000/topics/mongodb",
+		"body": "{\n\"id\": \"mongodb\",\n\"name\":\t\"Mongo Database\",\n\"description\": \"This is the topic's description for Mongo Database\"\n}",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			[
+				"Content-Type",
+				"application/json"
+			]
+		]
+	},
+
+	"DeleteTopic": 
+	{
+		"method": "DELETE",
+		"url": "http://localhost:9000/topics/mongodb",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"GetAllCoursesByTopic": 
+	{
+		"method": "GET",
+		"url": "http://localhost:9000/topics/mongodb/courses",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"AddCourseByTopic": 
+	{
+		"method": "POST",
+		"url": "http://localhost:9000/topics/mongodb/courses",
+		"body": "{\n        \"id\": \"mongodb-course1\",\n        \"name\": \"Mongo DB Course 1\",\n        \"description\": \"This is the topic's description for Mongo DB Course 1\"\n    }",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			[
+				"Content-Type",
+				"application/json"
+			]
+		]
+	},
+
+	"UpdateCourseByTopic": 
+	{
+		"method": "PUT",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1",
+		"body": "{\n        \"id\": \"mongodb-course1\",\n        \"name\": \"Mongo Database Course 1\",\n        \"description\": \"This is the topic's description for Mongo Database Course 1\"\n    }",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			[
+				"Content-Type",
+				"application/json"
+			]
+		]
+	},
+
+	"DeleteCourseByTopic": 
+	{
+		"method": "DELETE",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"GetAllLessonsByCourse": 
+	{
+		"method": "GET",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1/lessons",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"AddLessonByCourse": 
+	{
+		"method": "POST",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1/lessons",
+		"body": "{\n        \"id\": 1,\n        \"name\": \"Mongo DB Lesson 1\",\n        \"description\": \"This is the topic's description for Mongo DB Lesson 1\"\n}",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			[
+				"Content-Type",
+				"application/json"
+			]
+		]
+	},
+
+	"GetLessonById": 
+	{
+		"method": "GET",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1/lessons/1",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"GetCourseById": 
+	{
+		"method": "GET",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	},
+
+	"UpdateLessonByCourse": 
+	{
+		"method": "PUT",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1/lessons/1",
+		"body": "{\n        \"id\": 1,\n        \"name\": \"Mongo Database Lesson 1\",\n        \"description\": \"This is the topic's description for Mongo Database Lesson 1\"\n}",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			[
+				"Content-Type",
+				"application/json"
+			]
+		]
+	},
+
+	"DeleteLessonById": 
+	{
+		"method": "DELETE",
+		"url": "http://localhost:9000/topics/mongodb/courses/mongodb-course1/lessons/1",
+		"body": "",
+		"overrideMimeType": false,
+		"headers": 
+		[
+			
+		]
+	}
+}
